@@ -1,0 +1,51 @@
+.re{
+	background-image: url('jeshoots-com-5EKw8Z7CgE4-unsplash.jpg');
+	background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  margin-top:40px
+}
+.as{
+font-size:18px;
+}
+.mo{
+	border: 5px solid rgba(10, 180, 180, 1);
+	background: rgba(20, 20, 20, .6);
+	width:300px;
+}
+#join-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+.ms{
+	margin-top:100px;
+}
+.signupSection {
+  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 800px;
+  text-align: left;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+}
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
