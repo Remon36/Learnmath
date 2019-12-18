@@ -11,7 +11,7 @@ var x=Math.floor(1+Math.random()*10000);
 var y=Math.floor(1+Math.random()*10000);
 var z=Math.floor(1+Math.random()*4);
 if(z==1){
-	x[i]=x+"+"+y+"=";
+	q[i]=x+"+"+y+"=";
 	a[i]=x+y;
 	c1[i]=a[i];
 	c2[i]=a[i]+x;
@@ -20,7 +20,7 @@ if(z==1){
 }
 else if(z==2){
 	if(x>y){
-	x[i]=x+"-"+y+"=";
+	q[i]=x+"-"+y+"=";
 	a[i]=x-y;
 	c1[i]=a[i];
 	c2[i]=a[i]+x;
@@ -28,7 +28,7 @@ else if(z==2){
     c4[i]=a[i]+x+y
 	}
 	else{
-	x[i]=y+"-"+x+"=";
+	q[i]=y+"-"+x+"=";
 	a[i]=y-x;
 	c1[i]=a[i];
 	c2[i]=a[i]+x;
@@ -37,7 +37,7 @@ else if(z==2){
 	}
 }
 else if(z==3){
-	x[i]=x+"*"+y+"=";
+	q[i]=x+"*"+y+"=";
 	a[i]=x*y;
 	c1[i]=a[i];
 	c2[i]=a[i]+x;
@@ -45,7 +45,7 @@ else if(z==3){
     c4[i]=a[i]+x+y
 }
 else{
-	x[i]=x+"/"+y+"=";
+	q[i]=x+"/"+y+"=";
 	a[i]=x/y;
 	c1[i]=a[i];
 	c2[i]=a[i]+x;
