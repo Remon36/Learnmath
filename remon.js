@@ -1,7 +1,5 @@
 <script>
 function generate(){
-	var counter_correct=0;
-	var counter_wrong=0;
 	var q=new Array[100];
 	var a=new Array[100];
 	var c1=new Array[100];
