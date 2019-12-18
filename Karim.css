@@ -1,0 +1,58 @@
+fieldset
+{
+    
+ 
+ background-repeat:no-repeat;
+ background-size:100%;
+ 
+
+}
+legend
+{
+  color:blue;
+  border: 2px solid;
+  
+  
+}
+#Id1
+{ 
+ background-color:black;
+ color:red;
+ padding:40px;
+ text-align:center;
+
+ }
+#Id2
+{
+text-align:center;
+border:2px solid;
+}
+#Id3
+{
+
+}
+#Id4
+{
+font-weight:bold;
+}
+#Id5
+{
+
+background-color:crimson ;
+width:100px;
+height:30px;
+align:center;
+}
+#Id6
+{
+background-color:DodgerBlue ;
+}
+#Id7
+{
+
+background-color:LimeGreen ;
+}
+#btn
+{
+text-align:center;
+}
