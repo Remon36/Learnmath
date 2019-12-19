@@ -61,66 +61,91 @@ else{
 }
 for(i=1;i<=10;i++){
 	var w=Math.floor(1+Math.random()*100);
-	document.getElementById("question"+i).innerHTML=q[w];
-	document.getElementById("choicea"+i).innerHTML="<input type='radio' name='mob' value='A' />"+c1[w]+"<br>";
-    document.getElementById("choiceb"+i).innerHTML="<input type='radio' name='mob' value='b' />"+c3[w]+"<br>";
-	document.getElementById("choicec"+i).innerHTML="<input type='radio' name='mob' value='c' />"+c4[w]+"<br>";
-	document.getElementById("choiced"+i).innerHTML="<input type='radio' name='mob' value='d' />"+c4[w]+"<br>";
+	var v=Math.floor(1+Math.random()*100);
+	var m=Math.floor(1+Math.random()*100);
+	var n=Math.floor(1+Math.random()*100);
+	var b=Math.floor(1+Math.random()*100);
+	var c=Math.floor(1+Math.random()*100);
+	var l=Math.floor(1+Math.random()*100);
+    var o=Math.floor(1+Math.random()*100);
+    var p=Math.floor(1+Math.random()*100);
+    var s=Math.floor(1+Math.random()*100);
+	var tableDiv1 = document.getElementById( "frequencyTableDiv1" );
+	 tableDiv1.innerHTML = "<table>" + 
+               "<thead><th> "+"</th>"+"<th>"+q[w]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c1[w]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c2[w]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[w]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[w]+"</td></tr>" +
+               "</tbody></table>";
+			   	var tableDiv2 = document.getElementById( "frequencyTableDiv2" );
+	 tableDiv2.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[v]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c3[v]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c2[v]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c1[v]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[v]+"</td></tr>" +
+               "</tbody></table>";
+			   	var tableDiv3 = document.getElementById( "frequencyTableDiv3" );
+	 tableDiv3.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[m]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[m]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c1[m]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[m]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[m]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv4 = document.getElementById( "frequencyTableDiv4" );
+	 tableDiv4.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[n]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[n]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c4[n]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[n]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c1[n]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv5 = document.getElementById( "frequencyTableDiv5" );
+	 tableDiv5.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[b]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[b]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c4[b]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[b]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c1[b]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv6 = document.getElementById( "frequencyTableDiv6" );
+	 tableDiv6.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[c]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c1[c]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c2[c]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[c]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[c]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv7 = document.getElementById( "frequencyTableDiv7" );
+	 tableDiv7.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[l]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[l]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c3[l]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c1[l]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[l]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv8 = document.getElementById( "frequencyTableDiv8" );
+	 tableDiv8.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[o]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[o]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c3[o]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c1[o]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[o]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv9 = document.getElementById( "frequencyTableDiv9" );
+	 tableDiv9.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[p]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c2[p]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c4[p]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[p]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c1[p]+"</td></tr>" +
+               "</tbody></table>";
+			   var tableDiv10 = document.getElementById( "frequencyTableDiv10" );
+	 tableDiv10.innerHTML = "<table>" + 
+               "<thead><th>"+"</th>"+"<th>"+q[s]+"</th></thead>" +
+               "<tbody><tr><td>"+"<input type='radio' name='mob' value='A' />"+c1[s]+"</td><td>" +"<input type='radio' name='mob' value='b' />"+c2[s]+ "</td><td>" + 
+              "<input type='radio' name='mob' value='c' />"+c3[s]+"</td><td>"+"<input type='radio' name='mob' value='d' />"+c4[s]+"</td></tr>" +
+               "</tbody></table>";
 }
 }
 </script>
 </head>
-<body>
-<p id="question1"></p>
-<p id="choicea1"></p>
-<p id="choiceb1"></p>
-<p id="choicec1"></p>
-<p id="choiced1"></p>
-<p id="question2"></p>
-<p id="choicea2"></p>
-<p id="choiceb2"></p>
-<p id="choicec2"></p>
-<p id="choiced2"></p>
-<p id="question3"></p>
-<p id="choicea3"></p>
-<p id="choiceb3"></p>
-<p id="choicec3"></p>
-<p id="choiced3"></p>
-<p id="question4"></p>
-<p id="choicea4"></p>
-<p id="choiceb4"></p>
-<p id="choicec4"></p>
-<p id="choiced4"></p>
-<p id="question5"></p>
-<p id="choicea5"></p>
-<p id="choiceb5"></p>
-<p id="choicec5"></p>
-<p id="choiced5"></p>
-<p id="question6"></p>
-<p id="choicea6"></p>
-<p id="choiceb6"></p>
-<p id="choicec6"></p>
-<p id="choiced6"></p>
-<p id="question7"></p>
-<p id="choicea7"></p>
-<p id="choiceb7"></p>
-<p id="choicec7"></p>
-<p id="choiced7"></p>
-<p id="question8"></p>
-<p id="choicea8"></p>
-<p id="choiceb8"></p>
-<p id="choicec8"></p>
-<p id="choiced8"></p>
-<p id="question9"></p>
-<p id="choicea9"></p>
-<p id="choiceb9"></p>
-<p id="choicec9"></p>
-<p id="choiced9"></p>
-<p id="question10"></p>
-<p id="choicea10"></p>
-<p id="choiceb10"></p>
-<p id="choicec10"></p>
-<p id="choiced10"></p>
-<input type="button" value="generate" onclick="javascript:generate();"/>
+<body><ol>
+ <li><div id = "frequencyTableDiv1"></div></li>
+ <li><div id = "frequencyTableDiv2"></div></li>
+ <li><div id = "frequencyTableDiv3"></div></li>
+ <li><div id = "frequencyTableDiv4"></div></li>
+ <li><div id = "frequencyTableDiv5"></div></li>
+ <li><div id = "frequencyTableDiv6"></div></li>
+ <li><div id = "frequencyTableDiv7"></div></li>
+ <li><div id = "frequencyTableDiv8"></div></li>
+ <li><div id = "frequencyTableDiv9"></div></li>
+ <li><div id = "frequencyTableDiv10"></div></li>
+ </ol>
+ <input type="button" value="generate" onclick="javascript:generate();"/>
 </body>
 </html>
