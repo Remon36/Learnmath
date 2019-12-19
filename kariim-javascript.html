@@ -1,0 +1,236 @@
+<html>
+<head>
+<style>
+
+#questionsCounter
+{
+font-size:30px;
+}
+
+
+#Thequestion
+{
+
+font-size:30px;
+}
+#btn1
+{
+background-color:LimeGreen;
+}
+#Timer
+{
+text-align:center;
+border:2px solid;
+font-size:50px;
+}
+#designofquestion
+{
+border:silver 2px solid;
+
+}
+
+
+
+</style>
+<script>
+ var q=new Array(100);
+	var a=new Array(100);
+	var c1=new Array(100);
+	var c2=new Array(100);
+	var c3=new Array(100);
+	var c4=new Array(100);
+	var af=new Array(5);
+	var cf1=new Array(5);
+	var cf2=new Array(5);
+	var cf3=new Array(5);
+	var cf4=new Array(5);
+	var x;
+	var y;
+	var z;
+	var counter=1;
+	var u=1;
+	var total=0;
+	
+	var truequestion=0;
+	var falsequestion=0;
+	
+	
+function fun(){
+for(var i=1;i<=100;i++){
+x=Math.floor(1+Math.random()*100);
+y=Math.floor(1+Math.random()*100);
+z=Math.floor(1+Math.random()*4);
+if(z==1){
+	q[i]=x+"+"+y+"=";
+	a[i]=x+y;
+	c1[i]=a[i];
+	c2[i]=a[i]+x;
+	c3[i]=a[i]+y;
+    c4[i]=a[i]+x+y;
+}
+else if(z==2){
+	if(x>y){
+	q[i]=x+"-"+y+"=";
+	a[i]=x-y;
+	c1[i]=a[i];
+	c2[i]=a[i]+x;
+	c3[i]=a[i]+y;
+    c4[i]=a[i]+x+y;
+	}
+	else{
+	q[i]=y+"-"+x+"=";
+	a[i]=y-x;
+	c1[i]=a[i];
+	c2[i]=a[i]+x;
+	c3[i]=a[i]+y;
+    c4[i]=a[i]+x+y;
+	}
+}
+else if(z==3){
+	q[i]=x+"*"+y+"=";
+	a[i]=x*y;
+	c1[i]=a[i];
+	c2[i]=a[i]+x;
+	c3[i]=a[i]+y;
+    c4[i]=a[i]+x+y;
+}
+else{
+	q[i]=x+"/"+y+"=";
+	a[i]=x/y;
+	c1[i]=a[i];
+	c2[i]=a[i]+x;
+	c3[i]=a[i]+y;
+    c4[i]=a[i]+x+y;
+}
+}
+
+startTimer();
+}
+ var timer=60;
+ var min=0;
+ var sec=0;
+ function startTimer()
+ {
+ min=parseInt(timer/60);
+ sec=parseInt(timer%60);
+ if(timer<1)
+ {
+ window.location="IT project part 1.html";
+ }
+ 
+ document.getElementById("Timer").innerHTML="Time left : "+min.toString()+" : "+sec.toString();
+ timer--;
+ setTimeout(function()
+ {
+ startTimer();
+ },1000);
+ 
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+function fun2()
+{
+	for(var m=1;m<=4;m++){
+	document.getElementById("questionsCounter").innerHTML="Question "+counter+" out of "+100+"</p>"
+	var w=Math.floor(1+Math.random()*100);
+	document.getElementById("Thequestion").innerHTML=q[w];
+	var mx=Math.floor(1+Math.random()*4);
+	if(mx==1){
+	document.getElementById("Choice1").innerHTML="<input type='radio'  id='value1' name='mob' value='A'/>"+c1[w]+"<br>"
+    document.getElementById("Choice2").innerHTML="<input type='radio' id='value2' name='mob' value='B'/>"+c2[w]+"<br>"
+    document.getElementById("Choice3").innerHTML="<input type='radio' id='value3' name='mob' value='C'/>"+c3[w]+"<br>"
+    document.getElementById("Choice4").innerHTML="<input type='radio' id='value4' name='mob' value='d'/>"+c4[w]+"<br>"
+	}
+	if(mx==2){
+	document.getElementById("Choice1").innerHTML="<input type='radio' id='value2' name='mob' value='A'/>"+c3[w]+"<br>"
+	 document.getElementById("Choice2").innerHTML="<input type='radio' id='value1' name='mob' value='C'/>"+c1[w]+"<br>"
+    document.getElementById("Choice3").innerHTML="<input type='radio' id='value3' name='mob' value='B'/>"+c2[w]+"<br>"
+    document.getElementById("Choice4").innerHTML="<input type='radio' id='value4' name='mob' value='d'/>"+c4[w]+"<br>"
+	}
+	
+	
+	
+	if(mx==3){
+	document.getElementById("Choice1").innerHTML="<input type='radio' id='value4' name='mob' value='A'/>"+c4[w]+"<br>"
+    document.getElementById("Choice2").innerHTML="<input type='radio' id='value2' name='mob' value='B'/>"+c2[w]+"<br>"
+    document.getElementById("Choice3").innerHTML="<input type='radio' id='value3' name='mob' value='C'/>"+c3[w]+"<br>"
+    document.getElementById("Choice4").innerHTML="<input type='radio' id='value1' name='mob' value='d'/>"+c1[w]+"<br>"
+	}
+	
+	}
+	
+	if(mx==4){
+	document.getElementById("Choice1").innerHTML="<input type='radio' id='value3' name='mob' value='A'/>"+c3[w]+"<br>"
+    document.getElementById("Choice2").innerHTML="<input type='radio' id='value2' name='mob' value='B'/>"+c2[w]+"<br>"
+    document.getElementById("Choice3").innerHTML="<input type='radio' id='value1' name='mob' value='C'/>"+c1[w]+"<br>"
+    document.getElementById("Choice4").innerHTML="<input type='radio' id='value4' name='mob' value='d'/>"+c4[w]+"<br>"
+	}
+	
+	
+		counter++;
+}
+	
+
+
+function fun3()
+{
+
+var p=document.getElementById("value1");
+	var o=document.getElementById("value2");
+	var t=document.getElementById("value3");
+	var y=document.getElementById("value4");
+	
+	if(p.checked==true)
+	{
+	truequestion++;
+	}
+	else
+	{
+	falsequestion++;
+	}
+
+
+document.getElementById("trueQuestion").innerHTML="True questions = "+truequestion;
+document.getElementById("falseQuestion").innerHTML="False question = "+falsequestion;
+
+	}
+
+
+window.addEventListener("load",fun,false);
+
+
+</script>
+
+
+</head>
+<body>
+
+<div id="Timer"></div>
+<div id="questionsCounter"></div>
+<div id="designofquestion">
+<div id="Thequestion"></div>
+<div id="Choice1"></div>
+<div id="Choice2"></div>
+<div id="Choice3"></div>
+<div id="Choice4"></div>
+<div id="trueQuestion"></div>
+<div id="falseQuestion"></div>
+</div>
+
+<input type=button value="Next " id="btn1" onclick="fun2()">
+<input type=button value="Finish " id="btn2" onclick="fun3()">
+
+
+
+
+</body>
+</html>
